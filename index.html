@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalid'skitchen</title>
+    <script src="https://kit.fontawesome.com/468164e94b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/eduardo-roda-lopes-mNefYU7uRbk-unsplash.jpg">
+
+</head>
+
+<body>
+
+    <!-- =====section--1 NAV BAR ===== -->
+    <header>    
+        <nav class="navbar fw-700 navbar-expand-lg fixed-top " id="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png"
+                        alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Khalid'skitchen</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body fw-400">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle " href="./category.html" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#category">Category 1</a></li>
+                                    <li><a class="dropdown-item" href="#category">Category 2</a></li>
+                                    <li><a class="dropdown-item" href="#category">Category 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                                    <li><a class="dropdown-item" href="./order.html">order page</a></li>
+                                    <li><a class="dropdown-item" href="./favourite.html">favourite</a></li>
+                                    <li><a class="dropdown-item" href="./product.html">Single product</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html ">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="d-flex align-items-center mb-0 list-unstyled">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <form class="" role="search">
+                                    <a class="nav-link" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-text fw-700 ls-8px">
+            <p class="fs-24">Fresh and Organic</p>
+            <h1 class="py-3 fs-54">Delicious Healthy Vegitables</h1>
+            <div class="hero-btn">
+                <a href="./category.html" class="boxed-btn ms-0 ms-lg-3 mt-2 mt-lg-0 px-4 py-2 ls-2px">Vegies Collection</a>
+                <a href="./contact.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0">Contact Us</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!--=====section-2 COUNTER=====-->
+    <section id="counter">
+        <section class="counter-section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2>
+                            <span id="count1"></span>+
+                        </h2>
+                        <p>SAVINGS</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2>
+                            <span id="count2"></span>+
+                        </h2>
+                        <p>PHOTOS</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2>
+                            <span id="count3"></span>+
+                        </h2>
+                        <p>REVIEWS</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2>
+                            <span id="count4"></span>+
+                        </h2>
+                        <p>ORDERS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--=====section-3 PRODUCTS=====-->
+    <div class="product-section mt-150 mb-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <div class="section-title">
+                        <h3><span class="orange-text">Our</span> Products</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet
+                            beatae optio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 justify-content-evenly">
+
+                <!-- product-1 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item position-relative">
+                        <div class="product-image max-h100 text-center">
+                            <a href="product.html"><img class="of-cover h-200" src="./images/tamato.png" alt="tamato"></a>
+                        </div>
+                        <h3 class="pb-4">tomatoes</h3>
+                        <div class="product-price pb-4">
+                            <p class="product-price pb-4">80$ <span class="text-decoration-line-through">100$</span></p>
+                            <span>Per Kg</span>
+                        </div>
+
+                        <a href="./cart.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <div class="position-absolute top-10 right-20 fs-20 ">
+                            <i class="heart fa-solid fa-heart fw-200"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product-2 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item  position-relative">
+                        <div class="product-image max-h100 text-center">
+                            <a href="product.html"><img class="of-cover h-200" src="./images/onion.png" alt="onion"></a>
+                        </div>
+                        <h3 class="pb-4">Onion</h3>
+                        <div class="product-price pb-4">
+                            <p class="product-price pb-4">80$ <span class="text-decoration-line-through">100$</span></p>
+                            <span>Per Kg</span>
+                        </div>
+
+                        <a href="./cart.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <div class="position-absolute top-10 right-20 fs-20 ">
+                            <i class="heart fa-solid fa-heart fw-200"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product-3 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item  position-relative">
+                        <div class="product-image max-h100 text-center">
+                            <a href="product.html"><img class="of-cover h-200" src="./images/chilly.jpg" alt="chilly"></a>
+                        </div>
+                        <h3 class="pb-4">Red Chillies</h3>
+                        <div class="product-price pb-4">
+                            <p class="product-price pb-4">80$ <span class="text-decoration-line-through">100$</span></p>
+                            <span>Per Kg</span>
+                        </div>
+
+                        <a href="./cart.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <div class="position-absolute top-10 right-20 fs-20 ">
+                            <i class="heart fa-solid fa-heart fw-200"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product-4 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item  position-relative">
+                        <div class="product-image max-h100 text-center">
+                            <a href="product.html"><img class="of-cover h-200" src="./images/bell_pepper-removebg-preview.png"
+                                    alt="bell pepper"></a>
+                        </div>
+                        <h3 class="pb-4">Bell Pepper</h3>
+                        <div class="product-price pb-4">
+                            <p class="product-price pb-4">80$ <span class="text-decoration-line-through">100$</span></p>
+                            <span>Per Kg</span>
+                        </div>
+
+                        <a href="./cart.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <div class="position-absolute top-10 right-20 fs-20 ">
+                            <i class="heart fa-solid fa-heart fw-200"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product-5 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item  position-relative">
+                        <div class="product-image max-h100 text-center">
+                            <a href="product.html"><img class="of-cover h-200" src="./images/lemon.png" alt="Lemon"></a>
+                        </div>
+                        <h3 class="pb-4">Lemon</h3>
+                        <div class="product-price pb-4">
+                            <p class="product-price pb-4">80$ <span class="text-decoration-line-through">100$</span></p>
+                            <span>Per Kg</span>
+                        </div>
+
+                        <a href="./cart.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <div class="position-absolute top-10 right-20 fs-20 ">
+                            <i class="heart fa-solid fa-heart fw-200"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product-6 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item  position-relative">
+                        <div class="product-image max-h100 text-center">
+                            <a href="product.html"><img class="of-cover h-200" src="./images/cucumber.jpg" alt="cucumber"></a>
+                        </div>
+                        <h3 class="pb-4">Cucumber</h3>
+                        <div class="product-price pb-4">
+                            <p class="product-price pb-4">80$ <span class="text-decoration-line-through">100$</span></p>
+                            <span>Per Kg</span>
+                        </div>
+
+                        <a href="./cart.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <div class="position-absolute top-10 right-20 fs-20 ">
+                            <i class="heart fa-solid fa-heart fw-200"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====section-4 DOTM===== -->
+    <section class="deal-banner pt-50 pb-50 card  border-0">
+        <div class="container">
+            <div class="row g-0 px-3 ms-auto ">
+                <div class="image-column mt-40 col-lg-4 col-md-8">
+                    <div class="price-outside">
+                        <div class="price-inside position-relative mt-2 text-center">
+                            <span class="price pt-27 fw-400 position-relative">
+                                <strong class="fs-24">25%</strong> <br>"off per kg"
+                            </span>
+                        </div>
+                    </div>
+                    <img src="./images/dotm.png" class="dotm-img img-fluid rounded-start" alt="dotm">
+                </div>
+
+                <div class="col-md-8 col-lg-8">
+                    <div class="card-body pt-40 pl-50">
+                        <h3><span class="orange-text">Deal</span> of the month</h3>
+                        <h4 class="fw-300">barley salad</h4>
+                        <div class="text mt-25 mb-25 fw-400">Quisquam minus maiores repudiandae nobis, minima saepe id,
+                            fugit ullam similique!
+                            Beatae, minima quisquam molestias facere ea. Perspiciatis unde omnis iste natus error
+                            sitQuisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique!
+                            Beatae, minima quisquam molestias facere ea. Perspiciatis unde omnis iste natus error sit
+                            voluptatem accusant</div>
+                        <!-- time counter -->
+                        <div class="time-counter mt-150 pt-40">
+                            <h2 class="mb-5 pl-50" id="headline">Fresh Vegggiiesss Sale Ends In..</h2>
+                            <div id="countdown">
+                                <ul class="timer border-2">
+                                    <li><span id="days"></span>dys</li>
+                                    <li><span id="hours"></span>Hrs</li>
+                                    <li><span id="minutes"></span>Min</li>
+                                    <li><span id="seconds"></span>Sec</li>
+                                </ul>
+                                <div class="pl"><a href="./cart.html" class="bordered-btn ms-0 ms-lg-5 mt-lg-5 mt-md-3 mt-5"><i
+                                            class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of counter -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====section-5 testimonial===== -->
+    <section class="testimonial mt-150 mb-150">
+        <div class="container">
+            <div class="row">
+                <div class="test col-lg-10 offset-lg-1 text-center">
+                    <div class="card mb-3 border-0 align-items-center">
+                        <img src="./images/test1.jpg" class="card-img-top mx-auto text-center h-100px w-100px"
+                            alt="testimonial">
+                        <div class="card-body">
+                            <h2 class="fs-24">Saira Hakim
+                                <span>Local shop owner</span>
+                            </h2>
+                            <p class="testimonial-body">
+                                " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto beatae
+                                vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem accusantium "
+                            </p>
+                            <i class="fa-solid fa-quote-right fs-24 mt-4 fst-italic opacity-50"></i>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border-0 align-items-center">
+                        <img src="./images/test2.jpg" class="card-img-top mx-auto text-center h-100px w-100px"
+                            alt="testimonial">
+                        <div class="card-body">
+                            <h2 class="fs-24">David sikim
+                                <span>Business Man</span>
+                            </h2>
+                            <p class="testimonial-body">
+                                " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto beatae
+                                vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem accusantium "
+                            </p>
+                            <i class="fa-solid fa-quote-right fs-24 mt-4 fst-italic opacity-50"></i>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border-0 align-items-center">
+                        <img src="./images/test3.jpg" class="card-img-top mx-auto text-center h-100px w-100px"
+                            alt="testimonial">
+                        <div class="card-body">
+                            <h2 class="fs-24">Ruby math
+                                <span>Fashion Influencer</span>
+                            </h2>
+                            <p class="testimonial-body">
+                                " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto beatae
+                                vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem accusantium "
+                            </p>
+                            <i class="fa-solid fa-quote-right fs-24 mt-4 fst-italic opacity-50"></i>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border-0 align-items-center">
+                        <img src="./images/sharon.jpg" class="card-img-top mx-auto text-center h-100px w-100px"
+                            alt="testimonial">
+                        <div class="card-body">
+                            <h2 class="fs-24">Sharon phillip
+                                <span>Student</span>
+                            </h2>
+                            <p class="testimonial-body">
+                                " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto beatae
+                                vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem accusantium "
+                            </p>
+                            <i class="fa-solid fa-quote-right fs-24 mt-4 fst-italic opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====section-5 ABOUT-SECTION===== -->
+    <div class="abt-section mb-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-8 ">
+                    <div class="abt-bg ">
+                        <img src="./images/jude-infantini-9atKyud_9nU-unsplash.jpg" alt="pic">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 mt-lg-5 col-sm-12">
+                    <div class="abt-text">
+                        <p class="top-sub">Since Year 1999</p>
+                        <h2 class="fw-700">We are <span class="orange-text">Khalid'skitchen</span></h2>
+                        <p>Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac
+                            vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet
+                            sapien sed, interdum velit. Nam eu molestie lorem.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat
+                            veritatis minus, et labore minima mollitia qui ducimus.</p>
+                        <a href="about.html" class="bordered-btn ms-0 mt-4">know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====section-6 ABOUT-SECTION===== -->
+    <section class="about-home">
+        <div class="container">
+            <h3 class="fs-50">December sale is on! <br> with big <span class="orange-text">Discount...</span></h3>
+            <div class="sale-percent"><span>Sale! <br> Upto</span>50% <span>off</span></div>
+            <a href="./category.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-5">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- =====section-7 CATEGORY===== -->
+    <div class="product-section mt-150 mb-150" id="category">
+        <div class="container">
+            <div class="row mb-80">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <div class="section-title">
+                        <h3><span class="orange-text">Our</span>Category</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet
+                            beatae optio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 justify-content-evenly">
+
+                <!-- category-1 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item">
+                        <div class="product-image max-h100 text-center">
+                            <a href=""><img class="of-cover h-200"
+                                    src="./images/eduardo-roda-lopes-mNefYU7uRbk-unsplash.jpg" alt="tamato"></a>
+                        </div>
+                        <h3 class="pb-4">Vegetable Recipes</h3>
+                        <div class="product-price pb-4">
+                            <p class="pr-10 pl-10">Category:-1 <br> Vivamus lacus enim, pulvinar vel nulla sed,
+                                scelerisque rhoncus nisi. Praesent vitae
+                                mattis nunc, egestas viverra eros.</p>
+                        </div>
+                        <a href="./category.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> View Category</a>
+                    </div>
+                </div>
+                <!-- category-2 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item">
+                        <div class="product-image max-h100 text-center">
+                            <a href=""><img class="of-cover h-200"
+                                    src="./images/k_archive_3abc67a9a9fe8712c2243111696ffa606a6ff9cb.jpg"
+                                    alt="tamato"></a>
+                        </div>
+                        <h3 class="pb-4">Vegetable Juice</h3>
+                        <div class="product-price pb-4">
+                            <p class="pr-10 pl-10">Category:-2 <br> Vivamus lacus enim, pulvinar vel nulla sed,
+                                scelerisque rhoncus nisi. Praesent vitae
+                                mattis nunc, egestas viverra eros.</p>
+                        </div>
+                        <a href="./category.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> View Category</a>
+                    </div>
+                </div>
+                <!-- category-3 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item">
+                        <div class="product-image max-h100 text-center">
+                            <a href=""><img class="of-cover h-200" src="./images/yoav-aziz-AiHJiRCwB3w-unsplash.jpg"
+                                    alt="tamato"></a>
+                        </div>
+                        <h3 class="pb-4">Vegetable Salad's</h3>
+                        <div class="product-price pb-4">
+                            <p class="pr-10 pl-10">Category:-3 <br> Vivamus lacus enim, pulvinar vel nulla sed,
+                                scelerisque rhoncus nisi. Praesent vitae
+                                mattis nunc, egestas viverra eros.</p>
+                        </div>
+                        <a href="./category.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> View Category</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====section-8 FOOTER===== -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-box about-widget">
+                        <h2 class="widget-title">About us</h2>
+                        <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact get-in-touch">
+                        <h2 class="widget-title">Get in Touch</h2>
+                        <ul>
+                            
+                            <li>support@Khalid'skitchen.com</li>
+                            <li>+00 111 222 3333</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact subscribe">
+                        <h2 class="widget-title">Subscribe</h2>
+                        <p>Subscribe to our mailing list to get the latest updates.</p>
+                        <form class="mt-25" action="index.html">
+                            <input type="email" placeholder="Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====section-9 COPY-RIGHT===== -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <p>Copyrights © 2022 - <a href="#">KHALID AHMED</a>, All Rights Reserved.<br>
+                       
+                    </p>
+                </div>
+                <div class="col-lg-6 text-right col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="" src="./js/slick.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./js/counter.js"></script>
+</body>
+
+</html>
