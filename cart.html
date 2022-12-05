@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalid'skitchen</title>
+    <script src="https://kit.fontawesome.com/468164e94b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+
+</head>
+
+<body>
+    <!-- =====section NAV BAR ===== -->
+    <header class="type2">
+        <nav class="navbar fw-700 navbar-expand-lg fixed-top " id="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png"
+                        alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Khalid'skitchen</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body fw-400">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./index.html#category">Category 1</a></li>
+                                    <li><a class="dropdown-item" href="./index.html#category">Category 2</a></li>
+                                    <li><a class="dropdown-item" href="./index.html#category">Category 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                                    <li><a class="dropdown-item" href="./order.html">order page</a></li>
+                                    <li><a class="dropdown-item" href="./favourite.html">favourite</a></li>
+                                    <li><a class="dropdown-item" href="./product.html">Single product</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html ">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="d-flex align-items-center mb-0 list-unstyled">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <form class="" role="search">
+                                    <a class="nav-link" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-text fw-700 ls-8px">
+            <p class="fs-24">Happy And Healthy Shopping</p>
+            <h1 class="py-3 fs-54">YourCart</h1>
+        </div>
+    </header>
+    <!-- =====section check-out ===== -->
+    <div class="main mt-150 mb-150 overflow-hidden">
+        <h1>Shopping cart</h1>
+        <h2 class="sub-heading mt-25">Free shipping from $100!</h2>
+<div class="conatainer">
+    <div class="row">
+        <div class="col-lg-12 col-md-10">
+
+            <section class="shopping-cart">
+                <ol class="ui-list shopping-cart--list" id="shopping-cart--list">
+    
+                    <script id="shopping-cart--list-item-template" type="text/template">
+                  <li class="_grid shopping-cart--list-item">
+                    <div class="_column product-image   ">
+                      <img class="product-image--img" src="{{=img}}" alt="Item image" />
+                    </div>
+                    <div class="_column product-info">
+                      <h4 class="product-name">{{=name}}</h4>
+                      <p class="product-desc">{{=desc}}</p>
+                      <div class="price product-single-price">${{=price}}</div>
+                    </div>
+                    <div class="_column product-modifiers" data-product-price="{{=price}}">
+                      <div class="_grid">
+                        <button class="_btn _column product-subtract">&minus;</button>
+                        <div class="_column product-qty">0</div>
+                        <button class="_btn _column product-plus">&plus;</button>
+                      </div>
+                      <button class="_btn entypo-trash product-remove">Remove</button>
+                      <div class="price product-total-price">$0.00</div>
+                    </div>
+                  </li>
+                </script>
+    
+                </ol>
+    
+                <footer class="_grid cart-totals">
+                    <div class="_column subtotal" id="subtotalCtr">
+                        <div class="cart-totals-key">Subtotal</div>
+                        <div class="cart-totals-value">$0.00</div>
+                    </div>
+                    <div class="_column shipping" id="shippingCtr">
+                        <div class="cart-totals-key">Shipping</div>
+                        <div class="cart-totals-value">$0.00</div>
+                    </div>
+                    <div class="_column taxes" id="taxesCtr">
+                        <div class="cart-totals-key">Taxes (6%)</div>
+                        <div class="cart-totals-value">$0.00</div>
+                    </div>
+                    <div class="_column total" id="totalCtr">
+                        <div class="cart-totals-key">Total</div>
+                        <div class="cart-totals-value">$0.00</div>
+                    </div>
+                    <div class="_column checkout">
+                        <a href="./order.html"class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0">proceed to buy</a>
+                        
+                    </div>
+                </footer>
+    
+            </section>
+        </div>
+
+
+
+        </div>
+    </div>
+</div>
+        
+
+    <!-- =====section FOOTER===== -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-box about-widget">
+                        <h2 class="widget-title">About us</h2>
+                        <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact get-in-touch">
+                        <h2 class="widget-title">Get in Touch</h2>
+                        <ul>
+                            
+                            <li>support@Khalid'skitchen.com</li>
+                            <li>+00 111 222 3333</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact subscribe">
+                        <h2 class="widget-title">Subscribe</h2>
+                        <p>Subscribe to our mailing list to get the latest updates.</p>
+                        <form class="mt-25" action="index.html">
+                            <input type="email" placeholder="Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====section COPY-RIGHT===== -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <p>Copyrights © 2022 - <a href="#">KHALID AHMED</a>, All Rights Reserved.<br>
+                       
+                    </p>
+                </div>
+                <div class="col-lg-6 text-right col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="" src="./js/slick.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>

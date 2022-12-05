@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalid'skitchen</title>
+    <script src="https://kit.fontawesome.com/468164e94b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+ 
+    <!-- =====section NAV BAR ===== -->
+    <header class="type2">
+        <nav class="navbar fw-700 navbar-expand-lg fixed-top " id="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png"
+                        alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Khalid'skitchen</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body fw-400">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./index.html#category">Category 1</a></li>
+                                    <li><a class="dropdown-item" href="./index.html#category">Category 2</a></li>
+                                    <li><a class="dropdown-item" href="./index.html#category">Category 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                                    <li><a class="dropdown-item" href="./order.html">order page</a></li>
+                                    <li><a class="dropdown-item" href="./favourite.html">favourite</a></li>
+                                    <li><a class="dropdown-item" href="./product.html">Single product</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html ">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="d-flex align-items-center mb-0 list-unstyled">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <form class="" role="search">
+                                    <a class="nav-link" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-text fw-700 ls-8px">
+            <p class="fs-24">Get 24/7 Support</p>
+            <h1 class="py-3 fs-54">Contact Us</h1>
+        </div>
+    </header>
+
+    <!-- =====section NAV BAR ===== -->
+    <div class="contact-from-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mb-5 mb-lg-0">
+					<div class="form-title mb-25">
+						<h2 class="fs-25">Have you any question?</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ratione! Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum minus voluptate? Dolore, esse natus!</p>
+					</div>
+				 	<div id="form_status"></div>
+					<div class="contact-form col-sm-10">
+						<form type="POST">
+							<p>
+								<input type="text" placeholder="Name" name="name" id="name required">
+								<input type="email" placeholder="Email" name="email" id="email required">
+							</p>
+							<p>
+								<input type="tel" placeholder="Phone" name="phone" id="phone required">
+								<input type="text" placeholder="Subject" name="subject" id="subject required">
+							</p>
+							<p><textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea></p>
+							<input type="hidden" name="token" value="FsWga4&amp;@f6aw">
+							<p><input class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0" type="submit" value="Submit" required></p>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-10">
+					<div class="contact-form-wrap">
+						<div class="contact-form-box ml-40 mb-30">
+							<h4><i class="fa-solid fa-address-card"></i></i> Shop Address</h4>
+							<p>4/8, Streling heights <br>Infantry road. <br>India</p>
+						</div>
+						<div class="contact-form-box ml-40 mb-30">
+							<h4><i class="fa-solid fa-clock"></i> Shop Hours</h4>
+							<p>MON - FRIDAY: 8 to 9 PM <br> SAT - SUN: 10 to 8 PM </p>
+						</div>
+						<div class="contact-form-box ml-40 mb-30">
+							<h4><i class="fa-solid fa-phone"></i> Contact</h4>
+							<p>Phone: +00 111 222 3333 <br> Email: support@techfnatic.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- find-us -->
+    <div class="find-location blue-bg">
+        <div class="container-fluid m-0 p-0">
+            <div class="text-center">
+                <p> <i class="fas fa-map-marker-alt"></i> Find Our Location</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8391341347083!2d77.59633381399578!3d12.982138818161395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1714d2e763c3%3A0xaf89561c107d050!2sTechFNatic!5e0!3m2!1sen!2sin!4v1666089001335!5m2!1sen!2sin"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====section FOOTER===== -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-box about-widget">
+                        <h2 class="widget-title">About us</h2>
+                        <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact get-in-touch">
+                        <h2 class="widget-title">Get in Touch</h2>
+                        <ul>
+                            
+                            <li>support@Khalid'skitchen.com</li>
+                            <li>+00 111 222 3333</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact subscribe">
+                        <h2 class="widget-title">Subscribe</h2>
+                        <p>Subscribe to our mailing list to get the latest updates.</p>
+                        <form class="mt-25" action="index.html">
+                            <input type="email" placeholder="Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====section COPY-RIGHT===== -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <p>Copyrights © 2022 - <a href="#">KHALID AHMED</a>, All Rights Reserved.<br>
+                       
+                    </p>
+                </div>
+                <div class="col-lg-6 text-right col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>

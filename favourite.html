@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalid'skitchen</title>
+    <script src="https://kit.fontawesome.com/468164e94b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- =====section NAV BAR ===== -->
+    <header class="type2">
+        <nav class="navbar fw-700 navbar-expand-lg fixed-top " id="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png"
+                        alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Khalid'skitchen</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body fw-400">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./index.html#category">Category 1</a></li>
+                                    <li><a class="dropdown-item" href="./index.html#category">Category 2</a></li>
+                                    <li><a class="dropdown-item" href="./index.html#category">Category 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                                    <li><a class="dropdown-item" href="./order.html">order page</a></li>
+                                    <li><a class="dropdown-item" href="./favourite.html">favourite</a></li>
+                                    <li><a class="dropdown-item" href="./product.html">Single product</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html ">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="d-flex align-items-center mb-0 list-unstyled">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <form class="" role="search">
+                                    <a class="nav-link" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-text fw-700 ls-8px">
+            <p class="fs-24">Your List Of</p>
+            <h1 class="py-3 fs-54">favourite Product</h1>
+        </div>
+    </header>
+
+    <!-- =====fav product===== -->
+    <div class="product-section mt-150 mb-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <div class="section-title pb-50">
+                        <h3><span class="orange-text">Wishlist </span>  Products</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet
+                            beatae optio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 justify-content-evenly">
+
+                <!-- product-1 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item position-relative">
+                        <div class="product-image max-h100 text-center">
+                            <a href=""><img class="of-cover h-200" src="./images/broklie.jpg" alt="broklie"></a>
+                        </div>
+                        <h3 class="pb-4">Broklie</h3>
+                        <div class="product-price pb-4">
+                            <p class="product-price pb-4">80$ <span class="text-decoration-line-through">100$</span></p>
+                            <span>Per Kg</span>
+                        </div>
+
+                        <a href="./cart.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <div class="position-absolute top-10 right-20 fs-20">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product-2 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item  position-relative">
+                        <div class="product-image max-h100 text-center">
+                            <a href=""><img class="of-cover h-200" src="./images/avacado.jpg" alt="avacado"></a>
+                        </div>
+                        <h3 class="pb-4">Avacado</h3>
+                        <div class="product-price pb-4">
+                            <p class="product-price pb-4">80$ <span class="text-decoration-line-through">100$</span></p>
+                            <span>Per Kg</span>
+                        </div>
+
+                        <a href="./cart.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <div class="position-absolute top-10 right-20 fs-20 ">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product-3 -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item  position-relative">
+                        <div class="product-image max-h100 text-center">
+                            <a href=""><img class="of-cover h-200" src="./images/raddish.jpg" alt="raddish"></a>
+                        </div>
+                        <h3 class="pb-4">Raddish</h3>
+                        <div class="product-price pb-4">
+                            <p class="product-price pb-4">80$ <span class="text-decoration-line-through">100$</span></p>
+                            <span>Per Kg</span>
+                        </div>
+
+                        <a href="./cart.html" class="bordered-btn ms-0 ms-lg-3 mt-2 mt-lg-0 mb-4"><i
+                                class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <div class="position-absolute top-10 right-20 fs-20 ">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====section FOOTER===== -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-box about-widget">
+                        <h2 class="widget-title">About us</h2>
+                        <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact get-in-touch">
+                        <h2 class="widget-title">Get in Touch</h2>
+                        <ul>
+                            
+                            <li>support@Khalid'skitchen.com</li>
+                            <li>+00 111 222 3333</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact subscribe">
+                        <h2 class="widget-title">Subscribe</h2>
+                        <p>Subscribe to our mailing list to get the latest updates.</p>
+                        <form class="mt-25" action="index.html">
+                            <input type="email" placeholder="Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====section COPY-RIGHT===== -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <p>Copyrights © 2022 - <a href="#">KHALID AHMED</a>, All Rights Reserved.<br>
+                       
+                    </p>
+                </div>
+                <div class="col-lg-6 text-right col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="" src="./js/slick.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>
